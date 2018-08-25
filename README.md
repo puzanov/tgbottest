@@ -18,17 +18,25 @@ api_id = 123456
 api_hash = "e1503dbbe4906f8526a9ec0a92c85900"
 ```
 
-3. Now we a ready to install needed libs for the tool. Run sudo pip3 install -r requirements.txt
+3. Now we a ready to install needed libs for the tool. Run:
+```
+sudo pip3 install -r requirements.txt
+```
 Note that the tool needs python3, >= 3.4 to be precise. I have tested on python3.6 on Ubuntu and all worked fine. 
 
-4. We are ready to make a first run: ./test.py @my_bot_name
+4. We are ready to make a first run: 
+```
+./test.py @my_bot_name
+```
 At this point the tool will ask you to enter your Telegram user phone number. Enter it and that enter a confirmation code.
 This will happen only once. After a valid confirmation process the tool will create a my_account.session. This file is 
 your valid Telegram session. While the file exists and session is valid the tool should skip the validation process on future runs and 
 will start to send messages to a bot. 
 
 The second run will be like this:
+```
 ./test @my_bot_name
 OK
+```
 
 5. Here we are. Now you can integrate this tool to a DataDog pipeline and monitor your bots availability.
