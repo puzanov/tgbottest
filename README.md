@@ -12,9 +12,11 @@ For the moment each number can only have one api_id connected to it.
 
 2. After that you will have api_id and api_hash. Put this vars in config.ini file. You should create it in the dir where the tool is
 config.ini should be like this
+```
 [pyrogram]
 api_id = 123456
 api_hash = "e1503dbbe4906f8526a9ec0a92c85900"
+```
 
 3. Now we a ready to install needed libs for the tool. Run sudo pip3 install -r requirements.txt
 Note that the tool needs python3, >= 3.4 to be precise. I have tested on python3.6 on Ubuntu and all worked fine. 
