@@ -30,7 +30,7 @@ Note that the tool needs python3, >= 3.4 to be precise. I have tested on python3
 Enter phone number: +996771127001
 Is "+12024561111" correct? (y/n): y
 Enter phone code: 33412
-
+FAIL # or OK, ignore this message during the first start
 ```
 At this point the tool will ask you to enter your Telegram user phone number. Enter it and that enter a confirmation code.
 This will happen only once. After a valid confirmation process the tool will create a my_account.session. This file is 
